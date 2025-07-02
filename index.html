@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" validation="width=device-width, initial-scale=1.0">
+    <title>The Safe-House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/gjhacked-favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div id="games-container">
+        <div class="games" onclick="window.open('https://gjhacked.github.io/drive-mad', '_blank');">
+            <img class="game-logo" src="assets/drive-mad-logo.png" />
+            <h1 class="game-title">Drive Mad</h1>
+            <p class="game-text">Drive silly cars at high speeds in dangerous terrain. Oh, and you can't steer. Good
+                luck!</p>
+        </div>
+    </div>
+
+    <div id="btn-container">
+        <button class="btn" onclick="showSettings()">
+            <img src="assets/settings-icon.png">
+        </button>
+        <form id="settings-form">
+            <h1>Settings</h1>
+            <label>Tab Title:</label>
+            <input id="tab-title" placeholder="Enter tab title">
+            <label>Favicon:</label>
+            <input id="favicon-url" placeholder="Enter favicon URL">
+            <input id="save-btn" type="submit" value="Save" onclick="saveSettings()">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
